@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products & Services - The Style House</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>The Style House</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products & Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="testimonial.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Products & Services</h2>
+  <div class="products-container">
+
+    <!-- Example Product Card -->
+    <div class="product-card" onclick="openProduct(this)">
+      <img src="Azure Prestige Suit.jpg" alt="Azure Prestige Suit" />
+      <p class="product-name">Azure Prestige Suit</p>
+      <p class="price">P2950</p>
+    </div>
+
+    <div class="product-card" onclick="openProduct(this)">
+      <img src="Beige Authority Suit.jpg" alt="Beige Authority Suit" />
+      <p class="product-name">Beige Authority Suit</p>
+      <p class="price">P1080</p>
+    </div>
+
+    <div class="product-card" onclick="openProduct(this)">
+        <img src="Blazer set solid casual (2).jpg" alt="blazer set" />
+        <p class="product-name">Blazer set solid casual</p>
+        <p class="price">P1800</p>
+      </div>
+
+      <div class="product-card" onclick="openProduct(this)">
+        <img src="Blush Power Elegance Suit Set.jpg" alt="blush power" />
+        <p class="product-name">Blush Power</p>
+        <p class="price">P1200</p>
+      </div>
+
+      <div class="product-card" onclick="openProduct(this)">
+        <img src="Classic Authority Set.jpg" alt="Classic Authority" />
+        <p class="product-name">Classic Authority</p>
+        <p class="price">P2100</p>
+      </div>
+
+      <div class="product-card" onclick="openProduct(this)">
+        <img src="Midnight Prestige Tuxedo.jpg" alt="Midnight Prestige Tuxedo" />
+        <p class="product-name">Midnight Pretige Tuxedo</p>
+        <p class="price">P2900</p>
+      </div>
+
+      <div class="product-card" onclick="openProduct(this)">
+        <img src="Midnight Authority Suit.jpg" alt="Midnight Authority Suit" />
+        <p class="product-name">Midnight Authority Suit</p>
+        <p class="price">P2080</p>
+      </div>
+
+      <div class="product-card" onclick="openProduct(this)">
+        <img src="Luxury veste femme flower cuff.jpg" alt="Luxury veste femme flower cuff" />
+        <p class="product-name">Luxury veste femme flower cuff.</p>
+        <p class="price">P1020</p>
+      </div>
+
+      <div class="product-card" onclick="openProduct(this)">
+        <img src="Refined Elegance Suit.jpg" alt="Refined Elegance Suit" />
+        <p class="product-name">Refined Elegance Suit</p>
+        <p class="price">P1920</p>
+      </div>
+
+    <!-- Add more products here using same structure -->
+    <!-- Make sure all image files exist in the same folder as this HTML or correct the path -->
+
+  </div>
+
+  <div class="modal" id="productModal">
+    <div class="modal-content">
+      <div class="modal-image">
+        <img id="modalImg" src="" alt="Large View" />
+      </div>
+      <div class="modal-actions">
+        <button onclick="addToCart()">Add to Cart</button>
+        <button onclick="placeOrder()">Place Order</button>
+        <button onclick="enquire()">Enquire</button>
+        <button class="back-btn" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

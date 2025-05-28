@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Style House - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>The Style House</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products & Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="categories-container">
+    <h2>Explore Our Categories</h2>
+    <div class="category-grid">
+
+        <!-- Men's Suits -->
+        <div class="category-tile" onclick="openCategory('mens-suits')">
+            <img src="Azure Prestige Suit.jpg" alt="Men's Suits">
+            <h3>Men's Suits</h3>
+        </div>
+
+        <!-- Tuxedos -->
+        <div class="category-tile" onclick="openCategory('tuxedos')">
+            <img src="Midnight Prestige Tuxedo.jpg" alt="Tuxedos">
+            <h3>Tuxedos</h3>
+        </div>
+
+        <!-- Women's Suits & Blazers -->
+        <div class="category-tile" onclick="openCategory('womens-suits')">
+            <img src="Luxury veste femme flower cuff.jpg" alt="Women's Suits">
+            <h3>Women's Suits & Blazers</h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- Container to dynamically show products -->
+<section id="category-gallery" class="hidden"></section>
+
+<footer>
+    <p>&copy; 2025 The Style House | Elegant Formal Wear</p>
+</footer>
+
+
